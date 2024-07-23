@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="4e995a3f-7c7c-496e-9eff-a1982b30deeb" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://api.openweathermap.org Test Case 1" searchProperties="true" timeout="0">
+  <con:settings id="ba27b1c0-ba0f-43dd-921b-5d453dcfd589">
+    <con:setting id="4e995a3f-7c7c-496e-9eff-a1982b30deebfileName">https%3A%2F%2Fapi.openweathermap.org-Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="e76d057d-c731-47eb-aca9-ff2a0a4dd7c2">
+    <con:settings/>
+    <con:config service="https://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="56dc176d-ca01-491e-b517-868661677f99" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://api.openweathermap.org</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://api.openweathermap.org/data/2.5/weather</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="9d78acf4-3325-45fd-8358-80003907d75e" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200, 201, 404, 400</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="f0668047-2edb-4eaf-8942-02b343a8f747" name="Response SLA">
+          <con:configuration>
+            <SLA>700</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="q" value="Miami"/>
+          <con:entry key="appid" value="8939fc5b1c884a47802151e29f1f89a6"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>q</con:entry>
+          <con:entry>appid</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="ec623d26-8a18-415d-8b4f-9fe13d00afb8">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="ec623d26-8a18-415d-8b4f-9fe13d00afb8">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>
