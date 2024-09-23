@@ -1,0 +1,15 @@
+Ecommerce\Login.xml
+Ecommerce\buy.xml
+Ecommerce\logout.xml
+Ecommerce\search.xml
+Sample-Test\Search-All-Items.xml
+Sample-Test\UserExample.xml
+Ecommerce-Test-Suite-1\Ecommerce-Test-Case.xml
+Load-Test-1.xml
+Load-Test-2.xml
+Load-Test-3.xml
+EcommerceVirt\%2Ftest.xml
+EcommerceVirt\buy.xml
+EcommerceVirt\login.xml
+EcommerceVirt\logout.xml
+EcommerceVirt\search.xml

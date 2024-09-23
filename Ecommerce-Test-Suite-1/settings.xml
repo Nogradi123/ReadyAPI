@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="663d5ec9-2c02-486b-86a8-1e05ab18d5ad" name="Ecommerce Test Suite 1">
+  <con:description id="812a1a6c-01b2-4675-834f-8c600ae6657e">The test suite generated for the REST service [Ecommerce]</con:description>
+  <con:settings id="54890233-d89f-4b5b-bd98-c22bd3b63cb1">
+    <con:setting id="663d5ec9-2c02-486b-86a8-1e05ab18d5adfileName">Ecommerce-Test-Suite-1</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>
